@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/
+permissions:
+  - object: /var/www/html/
+    owner: ubuntu
+    group: ubuntu
+    mode: 777
+hooks:
+  BeforeInstall:
+    - location: scripts/installDependecies.sh
+      timeout: 300
+      runas: root
+    - location: scripts/restartngix.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stopnginx.sh
+      timeout: 300
+      runas: root
