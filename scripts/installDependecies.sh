@@ -11,11 +11,3 @@ cd ChatApp-Django/
 pip3 install -r requirements.txt
 pip3 install django bcrypt django-extensions
 pip3 install gunicorn
-sudo cp files/gunicorn.service /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl start gunicorn
-sudo systemctl enable gunicorn
-sudo cp files/ChatApp-Django /etc/nginx/sites-available/
-sudo ln -s /etc/nginx/sites-available/ChatApp-Django /etc/nginx/sites-enabled/
-sudo nginx -t
-sudo rm /etc/nginx/sites-enabled/default
