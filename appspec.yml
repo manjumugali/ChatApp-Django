@@ -11,12 +11,12 @@ permissions:
 hooks:
   BeforeInstall:
     - location: scripts/installDependecies.sh
-      timeout: 300
-      runas: root
+      timeout: 1200
+      runas: ubuntu
     - location: scripts/restartngix.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStop:
     - location: scripts/stopnginx.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
