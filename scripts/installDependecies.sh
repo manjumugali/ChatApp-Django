@@ -13,12 +13,12 @@ pip3 install gunicorn
 python3 manage.py collectstatic
 gunicorn --bind 0.0.0.0:8000 ChatApp-Django.wsgi:application
 sudo exit
-sudo mv /conffile/gunicorn.service/ /etc/systemd/system/
+sudo mv /files/gunicorn.service/ /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start gunicorn
 sudo systemctl enable gunicorn
 
-sudo mv /conffile/ChatApp-Django /etc/nginx/sites-available/
+sudo mv /files/ChatApp-Django /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/ChatApp-Django /etc/nginx/sites-enable
 sudo nginx -t
 sudo rm /etc/nginx/sites-enabled/default
