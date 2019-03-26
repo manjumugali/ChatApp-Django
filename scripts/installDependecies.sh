@@ -2,9 +2,10 @@
 sudo apt-get update
 sudo apt-get install python3-pip python3-dev nginx git -y
 sudo apt-get update
-pip3 install virtualenv
-virtualenv /home/ubuntu/venv
-source venv/bin/activate
+sudo apt-get install python3-venv -y
+python3 -m venv env
+source ./env/bin/activate
+pip3 install gunicorn
 git clone https://github.com/manjumugali/ChatApp-Django.git
 cd ChatApp-Django/
 pip3 install -r requirements.txt
@@ -16,6 +17,6 @@ sudo systemctl daemon-reload
 sudo systemctl start gunicorn
 sudo systemctl enable gunicorn
 sudo cp /home/ubuntu/ChatApp-Django/files/ChatApp-Django /etc/nginx/sites-available/
-sudo ln -s /etc/nginx/sites-available/ChatApp-Django /etc/nginx/sites-enable
+sudo ln -s /etc/nginx/sites-available/ChatApp-Django /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo rm /etc/nginx/sites-enabled/default
