@@ -8,19 +8,19 @@ files:
   - source: /
     destination: /home/ubuntu/
 permissions:
-  - object: /var/www/html/
-    owner: ubuntu
-    group: ubuntu
+  - object: /home/ubuntu/
+    owner: root
+    group: root
     mode: 777
 hooks:
   BeforeInstall:
     - location: scripts/installDependecies.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
     - location: scripts/restartngix.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStop:
     - location: scripts/stopnginx.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
