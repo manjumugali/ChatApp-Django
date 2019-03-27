@@ -1,6 +1,10 @@
 version: 0.0
 os: linux
 files:
+  - source: /files/gunicorn.service
+    destination: /etc/systemd/system/
+  - source: /files/ChatApp-Django
+    destination: /etc/nginx/sites-available/
   - source: /
     destination: /home/ubuntu/
 permissions:
@@ -11,8 +15,8 @@ permissions:
 hooks:
   BeforeInstall:
     - location: scripts/installDependecies.sh
-      timeout: 1200
-      runas: root
+      timeout: 300
+      runas: ubuntu
     - location: scripts/restartngix.sh
       timeout: 300
       runas: ubuntu
