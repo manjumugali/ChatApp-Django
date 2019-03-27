@@ -8,7 +8,7 @@ files:
   - source: /
     destination: /home/ubuntu/
 permissions:
-  - object: /home/ubuntu/
+  - object: /var/www/html/
     owner: ubuntu
     group: ubuntu
     mode: 777
