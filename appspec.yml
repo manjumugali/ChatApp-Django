@@ -6,7 +6,7 @@ files:
   - source: /files/ChatApp-Django
     destination: /etc/nginx/sites-available/
   - source: /
-    destination: /home/ubuntu/
+    destination: /home/ubuntu/ChatApp-Django
 permissions:
   - object: /var/www/html/
     owner: ubuntu
