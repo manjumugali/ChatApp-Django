@@ -9,7 +9,7 @@ source /home/ubuntu/venv/bin/activate
 cd /home/ubuntu/ChatApp-Django/
 pip3 install -r requirements.txt
 pip3 install django bcrypt django-extensions
-sudo chmod 777 manage.py
+sudo chmod 777 /home/ubuntu/ChatApp-Django/manage.py
 python3 manage.py collectstatic
 
 
