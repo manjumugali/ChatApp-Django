@@ -15,9 +15,6 @@ hooks:
     - location: scripts/installDependecies.sh
       timeout: 300
       runas: ubuntu
-    - location: scripts/restartngix.sh
-      timeout: 300
-      runas: ubuntu
   ApplicationStop:
     - location: scripts/stopnginx.sh
       timeout: 300
