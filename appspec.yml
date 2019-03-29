@@ -7,9 +7,9 @@ files:
     destination: /home/ubuntu/ChatApp-Django
 permissions:
   - object: /home/ubuntu/ChatApp-Django
+    pattern: "**"
     owner: ubuntu
     group: ubuntu
-    pattern: "**"
 hooks:
   AfterInstall:
     - location: scripts/installDependecies.sh
