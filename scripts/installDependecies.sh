@@ -10,6 +10,5 @@ cd /home/ubuntu/ChatApp-Django/
 pip3 install -r requirements.txt
 pip3 install django bcrypt django-extensions
 python3 manage.py collectstatic
-gunicorn --bind 0.0.0.0:8000 ChatApp-Django.wsgi:application
 
 
