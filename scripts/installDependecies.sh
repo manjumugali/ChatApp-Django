@@ -11,11 +11,6 @@ pip3 install -r requirements.txt
 pip3 install django bcrypt django-extensions
 sudo chown ubuntu:ubuntu /home/ubuntu/ChatApp-Django
 python3 manage.py collectstatic
-sudo cp /home/ubuntu/files/ChatApp-Django /etc/nginx/sites-available/
-sudo ln -s /etc/nginx/sites-available/ChatApp-Django /etc/nginx/sites-enabled/
-sudo nginx -t
-sudo rm /etc/nginx/sites-enabled/default
-
 
 
 
