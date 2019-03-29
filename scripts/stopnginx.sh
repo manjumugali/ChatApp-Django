@@ -1,2 +1,1 @@
-#!/bin/bash
-sudo service nginx stop      
+#!/bin/bash    
