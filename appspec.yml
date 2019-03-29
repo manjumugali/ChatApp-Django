@@ -5,7 +5,8 @@ files:
     destination: /etc/systemd/system/
   - source: /
     destination: /home/ubuntu/ChatApp-Django
-perChatt: /home/ubuntu/ChatApp-Django
+permissions:
+  - object: /home/ubuntu/ChatApp-Django
     pattern: "**"
     owner: ubuntu
     group: ubuntu
