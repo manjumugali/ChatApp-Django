@@ -3,8 +3,6 @@ os: linux
 files:
   - source: /files/gunicorn.service
     destination: /etc/systemd/system/
-  - source: /files/ChatApp-Django
-    destination: /etc/nginx/sites-available/
   - source: /
     destination: /home/ubuntu/ChatApp-Django
 perChatt: /home/ubuntu/ChatApp-Django
