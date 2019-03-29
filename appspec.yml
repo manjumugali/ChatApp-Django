@@ -6,10 +6,10 @@ files:
   - source: /
     destination: /home/ubuntu/ChatApp-Django
 permissions:
-  - object: /var/www/html/
+  - object: /home/ubuntu/ChatApp-Django
     owner: ubuntu
     group: ubuntu
-    mode: 777
+    pattern: "**"
 hooks:
   AfterInstall:
     - location: scripts/installDependecies.sh
