@@ -13,7 +13,7 @@ permissions:
     group: ubuntu
     mode: 777
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: scripts/installDependecies.sh
       timeout: 300
       runas: ubuntu
