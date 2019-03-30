@@ -19,6 +19,7 @@ hooks:
     - location: scripts/installDependecies.sh
       timeout: 300
       runas: ubuntu
+  ApplicationStart:
     - location: scripts/startgunicorn.sh
       timeout: 300
       runas: ubuntu
