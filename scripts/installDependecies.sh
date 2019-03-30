@@ -1,4 +1,3 @@
-
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install python3-pip python3-dev nginx git -y
@@ -16,7 +15,3 @@ sudo cp /home/ubuntu/ChatApp-Django/files/ChatApp-Django /etc/nginx/sites-availa
 sudo rm -rf /etc/nginx/sites-enabled/ChatApp-Django
 sudo ln -s /etc/nginx/sites-available/ChatApp-Django /etc/nginx/sites-enabled/
 sudo nginx -t
-
-
-
-
