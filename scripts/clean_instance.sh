@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo systemctl daemon-reload
 sudo systemctl stop gunicorn
 sudo systemctl stop nginx
 sudo rm -rf /home/ubuntu/*
