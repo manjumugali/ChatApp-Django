@@ -10,6 +10,13 @@ permissions:
     pattern: "**"
     owner: ubuntu
     group: ubuntu
+permissions:
+  - object: /home/ubuntu/ChatApp-Django/scripts
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+    mode: 755
+
 hooks:
   BeforeInstall:
     - location: scripts/clean_instance.sh
