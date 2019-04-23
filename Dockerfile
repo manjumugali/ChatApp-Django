@@ -11,7 +11,7 @@ COPY ChatApp-Django/ /usr/src/chatapp
 WORKDIR /usr/src/chatapp/
 
 # Install dependencies
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r chatapp/requirements.txt
 
 # Run the app
 COPY start.sh /usr/src/chatapp/
