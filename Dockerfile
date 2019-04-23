@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED=1
 
 COPY ChatApp-Django/ /usr/src/chatapp
 # Copy the rest of the applicaion's code
-COPY $WORKSPACE/ChatApp-Django/requirements.txt /usr/src/chatapp/
+ADD ChatApp-Django/requirements.txt /usr/src/chatapp/
 
 WORKDIR /usr/src/chatapp/
 
