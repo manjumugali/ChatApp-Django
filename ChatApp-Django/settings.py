@@ -92,16 +92,16 @@ CHANNEL_LAYERS = {
 # }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'chatapp',
-        'USER': 'postgres',
-        'PASSWORD': 'chatapp123',
-        'HOST': 'chatappdb-postgresql',
-        'PORT': '5432',
-    }
-}
+#DATABASES = {
+#    'default': {
+#       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#       'NAME': 'chatapp',
+#       'USER': 'postgres',
+#       'PASSWORD': 'chatapp123',
+#       'HOST': 'chatappdb-postgresql',
+#       'PORT': '5432',
+#   }
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
